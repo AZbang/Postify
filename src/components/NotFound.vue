@@ -1,6 +1,6 @@
 <template>
   <div id="not-found">
-    <h1>Page Not Foud D:<br> (Error 404)</h1>
+    <h1 class="ui center">Page Not Foud <i class="frown icon"></i><br> (Error 404)</h1>
   </div>
 </template>
 
@@ -9,3 +9,10 @@
     name: 'not-found'
   }
 </script>
+
+<style scope>
+  h1 {
+    text-align: center;
+    margin-top: 45vh !important;
+  }
+</style>

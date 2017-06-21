@@ -1,11 +1,20 @@
 <template>
   <div id="all-posts">
-    <preview-post></preview-post>
+    <div class="posts ui four column grid">
+      <preview-post></preview-post>
+      <preview-post></preview-post>
+      <preview-post></preview-post>
+      <preview-post></preview-post>
+      <preview-post></preview-post>
+      <preview-post></preview-post>
+      <preview-post></preview-post>
+      <preview-post></preview-post>
+    </div>
   </div>
 </template>
 
 <script>
-  import PreviewPost from './components/PreviewPost.vue'
+  import PreviewPost from './PreviewPost.vue'
 
   export default {
     name: 'all-posts',
@@ -14,3 +23,9 @@
     }
   }
 </script>
+
+<style>
+  .posts {
+    margin-top: 30px !important;
+  }
+</style>

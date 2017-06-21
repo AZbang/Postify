@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "description": "Simple anonim blog on Express and Vue",
+  "main": "",
+  "authors": [
+    "azbang"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "]"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.2.10"
+  }
+}
