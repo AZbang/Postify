@@ -10,7 +10,7 @@
   }
 </script>
 
-<style scope>
+<style scoped>
   h1 {
     text-align: center;
     margin-top: 45vh !important;

@@ -5,43 +5,65 @@
         <div class="ui dimmer">
           <div class="content">
             <div class="center">
-              <div class="ui inverted button">
+              <div class="ui inverted button read-more-button">
                 <router-link to="/posts/0" class="read-more">Read More</router-link>
               </div>
             </div>
           </div>
         </div>
-        <img src="dist/img/dog.jpg">
+        <img :src="image">
       </div>
       <div class="content">
-        <div class="right floated meta">24 June, 2017</div>
-        <div class="header">Cute Dog</div>
-        <div class="meta">@azbang</div>
+        <div class="right floated meta">{{date}}</div>
+        <div class="header">{{title}}</div>
+        <div class="meta">
+          <span class="author">{{author}}</span></div>
         <div class="description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>{{description}}</p>
         </div>
       </div>
       <div class="extra content">
-        <span class="btn left floated like">
-          <i class="thumbs horizontally flipped up icon"></i>
-          124
-        </span>
-        <span class="btn right floated dislike">
-          <i class="thumbs down icon"></i>
-          1556
-        </span>
+        <rating-panel></rating-panel>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import RatingPanel from './RatingPanel.vue'
+
   export default {
-    name: 'preview-post'
+    name: 'preview-post',
+    components: {
+      RatingPanel
+    },
+    data() {
+      return {
+        title: "Cute dog",
+        autor: "@mr.henry",
+        date: "24-06-2017",
+        image: "dist/img/dog.jpg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    },
+    computed: {
+      cover() {
+        return "url(" + this.image + ")";
+      }
+    }
   }
 </script>
 
 <style scope>
+  .read-more {
+    color: #fff;
+  }
+  .read-more:hover {
+    color: #333;
+  }
+  .read-more-button:hover > .read-more {
+    color: #333;
+  }
   .btn {
     cursor: pointer;
   }

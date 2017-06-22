@@ -9,6 +9,7 @@ var router = new VueRouter({
   routes: [
     {path: '*', component: NotFound},
     {path: '/', component: AllPosts},
+    {path: '/all', component: AllPosts},
     {path: '/posts', component: AllPosts},
     {path: '/posts/:id([0-9]+)', component: Post},
     {path: '/create', component: CreatePost}

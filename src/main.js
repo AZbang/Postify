@@ -10,8 +10,3 @@ new Vue({
   router,
   render: (h) => h(App)
 });
-
-
-$('.card  .image').dimmer({
-  on: 'hover'
-});
