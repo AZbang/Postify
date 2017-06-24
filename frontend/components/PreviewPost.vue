@@ -16,8 +16,7 @@
       <div class="content">
         <div class="right floated meta">{{date}}</div>
         <div class="header">{{title}}</div>
-        <div class="meta">
-          <span class="author">{{author}}</span></div>
+        <div class="meta author">{{author}}</div>
         <div class="description">
           <p>{{description}}</p>
         </div>
@@ -40,7 +39,7 @@
     data() {
       return {
         title: "Cute dog",
-        autor: "@mr.henry",
+        author: "@mr.henry",
         date: "24-06-2017",
         image: "img/dog.jpg",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."

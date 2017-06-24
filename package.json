@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e ./frontend/main.js -o public/build.js",
-    "serve": "http-server -o -c 1 -a localhost",
+    "serve": "node index",
     "dev": "npm-run-all --parallel watchify serve",
     "build": "cross-env NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o public/build.css ] -e ./frontend/main.js | uglifyjs -c warnings=false -m > public/build.js"
   },
@@ -45,6 +45,8 @@
     "watchify": "^3.4.0"
   },
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "sqlite3": "^3.1.8"
   }
 }
