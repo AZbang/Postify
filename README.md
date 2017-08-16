@@ -1,6 +1,27 @@
-# blog
+# Postify
+> **Simple anonim blog on Express and Vue**
 
-> Simple anonim blog on Express and Vue
+> **View Posts**
+![img1](https://github.com/AZbang/media-storage/blob/master/Postify/img1.PNG)
+
+
+-------
+
+
+> **Read Post**
+![img2](https://github.com/AZbang/media-storage/blob/master/Postify/img2.PNG)
+
+
+-------
+
+
+> **Create Post**
+![img3](https://github.com/AZbang/media-storage/blob/master/Postify/img3.PNG)
+
+
+-------
+
+
 
 ## Build Setup
 
@@ -22,3 +43,13 @@ npm test
 ```
 
 For more information see the [docs for vueify](https://github.com/vuejs/vueify).
+
+
+## LICENSE
+> **MIT**
+
+## Author
+**Andrey Zhevlakov (@AZbang)**
+* Mail: azbango5@gmail.com
+* __[VK](https://vk.com/id216312691)__
+* __[Telegram](https://telegram.me/AZbang)__
