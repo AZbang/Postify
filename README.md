@@ -1,27 +1,23 @@
 # Postify
-> **Simple anonim blog on Express and Vue**
+**Simple anonim blog on Express and Vue**
+
+------
+
 
 > **View Posts**
 ![img1](https://github.com/AZbang/media-storage/blob/master/Postify/img1.PNG)
 
-
 -------
-
 
 > **Read Post**
 ![img2](https://github.com/AZbang/media-storage/blob/master/Postify/img2.PNG)
 
-
 -------
-
 
 > **Create Post**
 ![img3](https://github.com/AZbang/media-storage/blob/master/Postify/img3.PNG)
 
-
 -------
-
-
 
 ## Build Setup
 
